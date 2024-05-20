@@ -1,0 +1,27 @@
+<!-- 신장(cm)와 체중(kg)을 정수로 입력 받아 표준체중(kg)과 비만도(%)를 구하는 프로그램 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    const height = parseInt(prompt("당신의 신장(cm)은? "));
+    const weight = parseInt(prompt("당신의 체중(kg)은? "));
+
+    const std_Weight = (height - 100) * 0.9;
+    const bmi = ((weight - std_Weight) / std_Weight) * 100;
+
+    document.write(`표준체중(Kg) : ${std_Weight.toFixed(2)}`);
+    document.write("<br>");
+    document.write(`비만도(%) : ${bmi.toFixed(2)}`);
+
+  </script>
+</body>
+
+</html>

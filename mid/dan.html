@@ -1,0 +1,31 @@
+<!-- 두 개의 정수를 받아 L.B.~U.B.까지 출력하려면? 중첩 반복문 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var i, j, min, max, temp;
+    min = parseInt(prompt("first Int : "));
+    max = parseInt(prompt("second Int : "));
+    document.write(min + " 부터" + max + " 까지 곱셈은 " + "<br>");
+    if (min > max) { // 첫번째 정수가 더 크면 swap
+      temp = min;
+      min = max;
+      max = temp;
+    }
+    for (j = min; j <= max; j++) {
+      for (i = 1; i <= 9; i++) {
+        document.write(j + '*' + i + '=' + (j * i) + "<br>");
+      }
+      document.write("=====================================<br>");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const num1 = parseInt(prompt("첫 번째 정수 입력: "));
+    const num2 = parseInt(prompt("두 번째 정수 입력: "));
+    const opr = prompt("연산자(+, -, *, /) 기호 입력: ");
+
+    switch (opr) {
+      case '+':
+        document.write(num1 + opr + num2 + '=' + (num1 + num2));
+        break;
+      case '-':
+        document.write(num1 + opr + num2 + '=' + (num1 - num2));
+        break;
+      case '*':
+        document.write(num1 + opr + num2 + '=' + (num1 * num2));
+        break;
+      case '/':
+        document.write(num1 + opr + num2 + '=' + (num1 / num2));
+        break;
+      default:
+        document.write("Error : Unknown Operator");
+
+    }
+  </script>
+</body>
+
+</html>

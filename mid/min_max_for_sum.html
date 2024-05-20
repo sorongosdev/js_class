@@ -1,0 +1,36 @@
+<!-- 실습 7-2) 두 개의 정수를 입력 받은 후 작은 수에서 큰 수까지의 모든 정수의 합을 구하는 프로그램 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var i, min, max, temp, sum;
+    sum = 0;
+    min = parseInt(prompt("first Int : "));
+    max = parseInt(prompt("second Int : "));
+    document.write(min + "부터" + max + "까지 합은 ");
+    if (min > max) { // swap
+      temp = min;
+      min = max;
+      max = temp;
+    }
+    for (i = min; i <= max; i++) {
+      sum += i;
+    }
+    // while 로 대체 가능
+    // while (min <= max) {
+    //   sum += min;
+    //   min++;
+    // }
+    document.write(sum + "입니다");
+  </script>
+</body>
+
+</html>

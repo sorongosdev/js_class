@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var sum = 0, avg = 0; // 0으로 초기화해주지 않으면 NaN이라고 뜸
+    var score = [98, 75, 86, 94, 87, 92, 68, 80, 79, 97];
+    for (var i = 0; i < score.length; i++) {
+      sum += score[i]; // 총점
+    }
+    avg = sum / (score.length); // 평균
+
+    document.write(`Sum ${sum} <br> Avg ${avg}`);
+  </script>
+</body>
+
+</html>
