@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="p1">
+    <span style="color:red">Hello</span>
+  </p>
+  <script>
+    const x = document.getElementById("p1");
+    alert(x.innerHTML) // <span style="color:red">Hello</span> // 전체가 출력
+
+    alert(x.innerText) // Hello // 텍스트만 출력
+  </script>
+</body>
+
+</html>

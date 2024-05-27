@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 id="title">글 제목</h1>
+  <p>단락1</p>
+  <ul>
+    <li>항목1</li>
+    <li class="item">항목2</li>
+    <li class="item">항목3</li>
+    <li class="item">항목4</li>
+  </ul>
+  <script>
+    const x = document.querySelectorAll("h1#title");
+    const y = document.querySelectorAll("p");
+    const z = document.querySelectorAll("li.item");
+
+    x[0].style.backgroundColor = "red";
+    y[0].style.backgroundColor = "green";
+    for (let i = 0; i < z.length; i++) {
+      const header = z[i];
+      header.style.color = 'orange';
+      header.style.backgroundColor = 'blue';
+      header.innerHTML = ' FROM JS';
+    }
+  </script>
+</body>
+
+</html>
