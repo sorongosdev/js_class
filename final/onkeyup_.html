@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <input type="text" placeholder="input key">
+  <p id="show"></p>
+  <script>
+    const input = document.querySelector("input");
+
+    input.addEventListener("keyup", changeUpper);
+    function changeUpper() {
+      input.value = input.value.toUpperCase();
+    }
+  </script>
+</body>
+
+</html>
