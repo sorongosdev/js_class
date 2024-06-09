@@ -8,12 +8,6 @@
 </head>
 
 <body>
-  <legend>신청인
-    <ul>
-      <li></li>
-    </ul>
-  </legend>
-
   <form name="testForm">
     <label class="reg" for="class">학과</label>
     <select name="major" onchange="displaySelect()">
@@ -27,22 +21,12 @@
     </select>
   </form>
   <script>
-    var check = documnet.querySeletor("$ShipingInfo"); // select 메뉴를 가자와 selectMenu로 저장
+    var selectMenu = document.testForm.major;
+
     function displaySelect() {
-      // var selectedText = 
+      var selectedText = selectMenu.options[selectMenu.selectedIndex].innerText;
+      alert(`${selectedText} 선택함`);
     }
-
-    check.addEventListner("click", function () {
-      var nameInfo = document.querySelector("#billingName").value;
-      var tellinfo = document.querySelector("#billingTel").value;
-    });
-
-    if (check.checked == true) {
-      document.querySelector("shippingName").value
-        = document.querySelector("billingName").value
-
-    }
-
 
   </script>
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- [예상문제] 비밀번호 맞는지, 원래 설정된 것과 비교하고, 일정 자릿수만큼 제한하는 이벤트처리 -->
+<!-- value로 label의 값에 접근해야함 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form name="pwForm">
+    <legend>비밀번호</legend>
+    <label><input type="text" name="pw"></label>
+    <button onclick="checkValidation()">확인</button>
+  </form>
+  <script>
+    function checkValidation() {
+      if (document.pwForm.pw.value == '1234') {
+        alert("correct");
+      }
+      else alert(document.pwForm.pw.value);
+    }
+  </script>
+</body>
+
+</html>

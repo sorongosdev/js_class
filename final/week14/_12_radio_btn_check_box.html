@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form name="testForm">
+    <lengend>신청 과목</legend>
+      <p>
+        이 달에 신청할 과목은?
+      </p>
+      <label><input type="radio" name="subject" value="speaking">회화</label>
+      <label><input type="radio" name="subject" value="grammar">문법</label>
+      <label><input type="radio" name="subject" value="writing">작문</label>
+
+      <legend>메일링</legend>
+      <p>메일로 받고 싶은 뉴스 주제</p>
+      <label><input onclick="menuSelected(this)" type="radio" name="mailing1" value="news">해외 단신</label>
+      <label><input type="radio" name="mailing2" value="dialog">5분 회화</label>
+      <label><input type="radio" name="mailing3" value="pops">모닝팝스</label>
+  </form>
+  <script>
+    function menuSelected(element) {
+      alert(element.value);
+    }
+  </script>
+</body>
+
+</html>
