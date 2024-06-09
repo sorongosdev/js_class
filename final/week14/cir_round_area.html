@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>원 둘레와 넓이 계산</title>
+  <link rel="stylesheet" type="text/css" href="ex1.css">
+
+</head>
+
+<body>
+  <h1>원둘레와 넓이 계산</h1>
+  <div id="container">
+    <form>
+      <div id="calc">
+        <p>반지름 : <br>
+          <input type="text" id="radius" name="radius">
+          <span id="start">계산</span>
+        </p>
+        <hr>
+        <p>원둘레 : <br>
+          <input type="text" id="round">
+        </p>
+        <p>원넓이 : <br>
+          <input type="text" id="area">
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    var radius = document.querySelector("#radius");
+    var start = document.querySelector("#start");
+    start.addEventListener("click", function () {
+      document.querySelector("#round").value = Number(radius.value) * Math.PI * 2;
+      document.querySelector("#area").value = Math.PI * Number(radius.value) * Number(radius.value);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <img onmouseenter="bigImage(this)" onmouseleave="smallImage(this)" src="dum.png" width="64" height="64">
+  <script>
+    function bigImage(x) {
+      x.style.width = "128px";
+      x.style.height = "128px";
+    }
+    function smallImage(x) {
+      x.style.width = "64px";
+      x.style.height = "64px";
+    }
+  </script>
+</body>
+
+</html>
