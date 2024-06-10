@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 전개 연산자 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function restOperator(...items) { // 나머지 매개변수
+      document.write(items + "<br>");
+      console.log(items);
+    }
+
+    function justPrinter(items) {
+      document.write(items + "<br>");
+      console.log(items);
+    }
+
+    var arr = [1, 2, 3, 4];
+
+    console.log("전개 연산자 0, 나머지 매개변수 0");
+    restOperator(...arr); // [1,2,3,4] // Array(4)
+
+    console.log("전개 연산자 X, 나머지 매개변수 0"); // 통으로 들어감
+    restOperator(arr); // [[1,2,3,4]] // Array(1)
+
+    console.log("전개 연산자 0, 나머지 매개변수 X");
+    justPrinter(...arr); // 1 // 1
+
+    console.log("전개 연산자 X, 나머지 매개변수 X");
+    justPrinter(arr); // [1,2,3,4] // Array(4)
+  </script>
+</body>
+
+</html>

@@ -19,11 +19,11 @@
   <script>
     const x = document.querySelectorAll("h1#title");
     const y = document.querySelectorAll("p");
-    const z = document.querySelectorAll("li.item");
+    const z = document.querySelectorAll("li.item"); // 아이디로 2~4만 선택
 
-    x[0].style.backgroundColor = "red";
-    y[0].style.backgroundColor = "green";
-    for (let i = 0; i < z.length; i++) {
+    x[0].style.backgroundColor = "red"; // 제목
+    y[0].style.backgroundColor = "green"; // 단락
+    for (let i = 0; i < z.length; i++) { // 항목 2~4
       const header = z[i];
       header.style.color = 'orange';
       header.style.backgroundColor = 'blue';

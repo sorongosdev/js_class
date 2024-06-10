@@ -8,10 +8,11 @@
 </head>
 
 <body>
-  <p id="show"></p>
+  <button id="btn">확인</button>
   <script>
-    // document.getElementById("show").innerHTML = document.URL;
-    document.getElementById("show").innerHTML = document.title;
+    document.getElementById("btn").addEventListener("click", function () { // onclick이 아닌 click
+      this.style.backgroundColor = "yellow";
+    });
   </script>
 </body>
 

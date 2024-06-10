@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button onclick="showMsg1(this)">Click!</button>
+  <button ondblclick="showMsg2(this)">Double Click!</button>
+  <p id="show"></p>
+
+  <script>
+    function showMsg1(btn) {
+      document.getElementById("show").innerHTML = btn.innerHTML;
+    }
+    function showMsg2(btn) {
+      document.getElementById("show").innerHTML = btn.innerHTML;
+    }
+  </script>
+</body>
+
+</html>

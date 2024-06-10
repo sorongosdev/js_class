@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     div#box1 {
       border: solid 3px red;
@@ -20,20 +19,24 @@
 </head>
 
 <body>
+  <!-- mouseenter은 div 안에서는 불변 -->
   <div id="box1" onmouseenter="increaseX()">
     <p>단락1</p>
     <span id="show1"></span>
   </div>
+  <!-- mouseover은 태그 간에 전환이 되면 over됐다고 판단 -->
   <div id="box2" onmouseover="increaseY()">
     <p>단락2</p>
     <span id="show2"></span>
   </div>
   <script>
     let x = 0, y = 0;
+    // when mouse enter
     function increaseX() {
       x += 1;
       document.getElementById("show1").innerHTML = x;
     }
+    // when mouse over
     function increaseY() {
       y += 1;
       document.getElementById("show2").innerHTML = y;

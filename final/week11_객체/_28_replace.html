@@ -8,11 +8,13 @@
 </head>
 
 <body>
-  <button id="btn">확인</button>
   <script>
-    document.getElementById("btn").addEventListener("click", function () {
-      this.style.backgroundColor = "yellow";
-    });
+    let str1 = "my friend or a friend of mine?";
+    let str2 = str1.replace("friend", "student"); // 앞에 하나만 바뀜
+    text = "";
+    text += str2 + "<br>";
+    text += str1;
+    document.write(text);
   </script>
 </body>
 

@@ -14,8 +14,8 @@
     const input = document.querySelector("input");
     let text = "";
 
-    input.addEventListener("keydown", showKey);
-    function showKey(e) {
+    input.addEventListener("keydown", showKey); // 이벤트리스너에서 매개변수 없이 호출해도
+    function showKey(e) { // 인자 이용가능
       text += e.key;
       document.getElementById("show").innerHTML = text;
     }

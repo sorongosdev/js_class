@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 매개변수로 시급, 시간을 입력받아 급여를 계산 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-wid th, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function earnings(name, wage = 8590, hours = 40) {
+      console.log(`이름: ${name}`);
+      console.log(`최종 급여: ${wage * hours}`);
+    }
+
+    earnings("도소라", 10000, 50);
+    earnings("김연자");
+  </script>
+</body>
+
+</html>

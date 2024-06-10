@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!-- onmouseout은 자식 요소로 마우스가 이동할 때도 발생, onmouseleave는 발생X-->
+
+<head>
+  <title>Mouse Events</title>
+  <style>
+    #parent {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      position: relative;
+    }
+
+    #child {
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="parent">
+    Parent
+    <div id="child">Child</div>
+  </div>
+
+  <script>
+    const parent = document.getElementById('parent');
+    const child = document.getElementById('child');
+
+    parent.onmouseleave = function () {
+      console.log('Mouse left parent (mouseleave)');
+    };
+
+    parent.onmouseout = function () {
+      console.log('Mouse left parent (mouseout)');
+    };
+
+    child.onmouseleave = function () {
+      console.log('Mouse left child (mouseleave)');
+    };
+
+    child.onmouseout = function () {
+      console.log('Mouse left child (mouseout)');
+    };
+  </script>
+</body>
+
+</html>

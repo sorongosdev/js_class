@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var stationArr = ['', '서울', '천안아산', '오송', '대전', '동대구', '', '부산'];
+    var feeArr = [0, 0, 14100, 18500, 23700, 48300, 0, 58800];
+
+    var destination = prompt("도착역 입력: ");
+    var num_people = Number(prompt("인원: "));
+
+    document.write("출발역: ");
+    document.write(stationArr[1] + "<br>");
+    document.write("도착역: ");
+    document.write(stationArr[destination] + "<br>");
+    document.write("인원: ");
+    document.write(num_people + "<br>");
+    document.write("운임요금: ");
+    document.write(num_people * feeArr[destination] + "<br>");
+
+  </script>
+</body>
+
+</html>
